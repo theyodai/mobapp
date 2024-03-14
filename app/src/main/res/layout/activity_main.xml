@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_above="@id/timerTextView"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="00:00:00"/>
+
+    <Button
+        android:id="@+id/buttonOpenWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Открыть Shutterstock"
+        android:layout_margin="16dp"
+        android:layout_above="@id/timerTextView"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonOpenPinterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Открыть Pinterest"
+        android:layout_margin="16dp"
+        android:layout_above="@id/buttonOpenWebsite"
+        android:layout_centerHorizontal="true"/>
+
+
+    <!-- activity_main.xml -->
+    <Button
+        android:id="@+id/buttonShowGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Показать фотоленту"
+        android:layout_margin="16dp"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>
